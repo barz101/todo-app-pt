@@ -1,0 +1,69 @@
+header {
+    height: 90px;
+    box-shadow: 0 2px 7px 0 rgba(0, 0, 0, 0.096);
+    position: sticky;
+    z-index: 4;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    font-size: rem(15px);
+    font-weight: 700;
+    color: #707070;
+    .right-container {
+        margin-right: 2vw;
+        .property-type-btns {
+            font-size: rem(16px);
+            width: rem(169px);
+            height: rem(36px);
+            border-radius: em(5px);
+            border: em(1px) solid #696a72;
+            font-weight: 400;
+            line-height: rem(34.28px);
+            > button {
+                width: 50%;
+                height: 100%;
+            }
+            > button:nth-child(1) {
+                color: #000000;
+            }
+            > button:nth-child(2) {
+                color: $clr4;
+                background-color: $clr1;
+            }
+        }
+        > span {
+            margin-inline-start: 2.5vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            cursor: pointer;
+            span {
+                margin-left: em(5px);
+                margin-right: em(6px);
+            }
+            .icon {
+                width: inherit;
+            }
+        }
+    }
+    .left-container {
+        margin-left: 2vw;
+        > span {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            cursor: pointer;
+            span {
+                margin-left: 2vw;
+            }
+            .icon {
+                width: inherit;
+            }
+        }
+    }
+    .logo {
+        direction: ltr;
+        width: rem(132px);
+        margin-right: 5vw;
+    }
+}
