@@ -7,7 +7,6 @@ const app = express();
 const http = require('http').createServer(app);
 import todoRoutes from './routes/todosRoutes'
 
-// app.get('/', (req, res) => res.send('Hello World!'))
 app.use(bodyParser.json());
 app.use(express.static(path.resolve(__dirname, 'public')))
 
